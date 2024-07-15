@@ -35,10 +35,10 @@ class PostController extends Controller
             'content' => 'required',
         ]);
 
-        dd($request->all());
+        //dd($request->all());
 
         Post::create($request->all());
-        return redirect()->route('Posts.index'); 
+        return redirect()->route('posts.index'); 
     }
 
     /**
